@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Display</title>
+    <style>
+       
+        
+        body{
+            /* background-image: -webkit-linear-gradient(); */
+            background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        div{
+            background-color: azure;
+            border: 1px solid black;
+            width: 85%;
+            height: 85%;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <center>
+        <div>
+        <h1>The temperature in the city <br><u><%= city %></u> : </h1>
+        <h2>Maximum Temperature <%= maxtemp %></h2>
+        <h2>Minimum Temperature <%= mintemp %></h2>
+        <h2><%= desc %></h2>
+        <img src = <%= iconurl %> >
+        </div>
+    </center>
+</body>
+</html>
